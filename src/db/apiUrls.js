@@ -1,4 +1,4 @@
-import supabase from "@/db/supabase.js";
+import supabase, { supabaseUrl } from "@/db/supabase.js";
 
 // ==========[Get all Urls]==========================
 
@@ -16,7 +16,7 @@ export async function getUrls(user_id){
 // ==========[Create A New Url]==========================================
 
 export async function createUrl({title, longUrl, customUrl, user_id}, qrcode) {
-    const short_url = Math.random().toString(36).substr(2, 6);
+    const short_url = Math.random().toString(36).substring(2, 6);
     const fileName = `qr-${short_url}`;
   
     const {error: storageError} = await supabase.storage
