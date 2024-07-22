@@ -1,4 +1,5 @@
-
+import DeviceStats from "@/components/ui/device-stats";
+import Location from "@/components/ui/location-stats";
 import {Button} from "@/components/ui/button";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import {UrlState} from "@/Context";
