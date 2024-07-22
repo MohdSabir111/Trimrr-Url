@@ -39,7 +39,7 @@ function LinkCard({url,fetchUrls}) {
               {url?.title}
             </span>
             <span className="text-2xl text-blue-400 font-bold hover:underline cursor-pointer">
-              https://trimrr.in/{url?.custom_url ? url?.custom_url : url.short_url}
+            https://trimrr-beta.vercel.app/{url?.custom_url ? url?.custom_url : url.short_url}
             </span>
             <span className="flex items-center gap-1 hover:underline cursor-pointer">
               <LinkIcon className="p-1" />
@@ -53,7 +53,7 @@ function LinkCard({url,fetchUrls}) {
             <Button
               variant="ghost"
               onClick={() =>
-                navigator.clipboard.writeText(`https://trimrr.in/${url?.short_url}`)
+                navigator.clipboard.writeText(`https://trimrr-beta.vercel.app/${url?.short_url}`)
               }
             >
               <Copy />

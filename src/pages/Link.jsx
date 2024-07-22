@@ -76,13 +76,13 @@ const Link = () => {
             {url?.title}
           </span>
           <a
-            href={`https://trimrr-beta.vercel.app/${link}`}
+          href={`https://trimrr-beta.vercel.app/${link}`}
             target="_blank"
             className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer"
           >
          https://trimrr-beta.vercel.app/{link}
           </a>
-          <a
+          <a 
             href={url?.original_url}
             target="_blank"
             className="flex items-center gap-1 hover:underline cursor-pointer"
