@@ -162,7 +162,7 @@ const Login = () => {
   };
 
   return (
-    <Card>
+    <Card data-aos="fade-up" data-aos-duration="1000">
       <CardHeader>
         <CardTitle>Login</CardTitle>
         <CardDescription>

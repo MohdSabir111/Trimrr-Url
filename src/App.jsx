@@ -9,6 +9,10 @@ import AppLayout from './layouts/AppLayout'
 import Landing from './pages/Landing'
 import UrlProvider from './Context'
 import RequireAuth from './components/require-auth'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+AOS.init();
 
 const router = createBrowserRouter([
   {

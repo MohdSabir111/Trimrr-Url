@@ -48,7 +48,9 @@ const Dashboard = () => {
         <BarLoader width={"100%"} color="#36d7b7" />
       )}
       <div className="grid grid-cols-2 gap-4">
-        <Card>
+        <Card data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
           <CardHeader>
             <CardTitle>Links Created</CardTitle>
           </CardHeader>
@@ -56,8 +58,10 @@ const Dashboard = () => {
             <p>{urls?.length}</p>
           </CardContent>
         </Card>
-        <Card>
-          <CardHeader>
+        <Card data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <CardHeader >
             <CardTitle>Total Clicks</CardTitle>
           </CardHeader>
           <CardContent>

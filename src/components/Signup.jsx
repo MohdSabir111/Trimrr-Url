@@ -80,7 +80,7 @@ import useFetch from "@/hooks/useFetch";
   };
 
   return (
-    <Card>
+    <Card  data-aos="fade-up"  data-aos-duration="1000">
       <CardHeader>
         <CardTitle>Signup</CardTitle>
         <CardDescription>
